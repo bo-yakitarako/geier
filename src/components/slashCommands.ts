@@ -10,8 +10,8 @@ import { battle } from '../battle/Geier';
 import { button } from './buttons';
 
 const registration = {
-  launch: {
-    data: new SlashCommandBuilder().setName('launch').setDescription('はげたか～ん'),
+  geier: {
+    data: new SlashCommandBuilder().setName('geier').setDescription('はげたか～ん'),
     execute: async (interaction: ChatInputCommandInteraction) => {
       battle.create(interaction);
       await interaction.reply({
